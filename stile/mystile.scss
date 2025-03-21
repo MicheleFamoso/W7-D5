@@ -1,0 +1,35 @@
+@import "./scss/functions";
+@import "./scss/variables";
+
+
+
+$primary:       #F56500 ;
+$secondary:     #35475B ;
+$success:       #6F6 ;
+$info:          #45AEAD ;
+$warning:      #FFC347;
+$danger:        #621615 ;
+
+
+$theme-colors-2: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger
+ 
+) ;
+
+$theme-colors:map-merge($theme-colors,$theme-colors-2);
+
+$spacers-2: (
+  
+  6: $spacer * .3.5,
+  7: $spacer * 4,
+  8: $spacer * 4.5,
+  9: $spacer * 5,
+  10: $spacer * 5.5,
+) ;
+$spacers:map-merge($spacers,$spacers-2);
+@import "./scss/bootstrap.scss"
