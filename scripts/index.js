@@ -18,7 +18,7 @@ const films = function () {
       data.forEach((film) => {
         row.innerHTML =
           row.innerHTML +
-          ` <div class="col col-12 col-sm-6"> 
+          ` <div class="col col-12 col-md-6"> 
             <div class="card mb-3 mt-3 bg-secondary ">
       <div class="row g-0">
         <div class="col-md-4">
